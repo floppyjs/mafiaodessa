@@ -1,0 +1,10 @@
+.background {
+  background-image: image-set(
+    url(/images/common/bg-modal.webp) 1x,
+    url(/images/common/bg-modal@x2.webp) 2x
+  );
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

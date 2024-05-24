@@ -1,0 +1,63 @@
+.sectionBg {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container::before {
+  content: '';
+
+  width: 384px;
+  height: 400px;
+
+  position: absolute;
+  top: 70px;
+  left: -158px;
+
+  background: #141318;
+
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 351px) {
+  .container::before {
+    left: -170px;
+  }
+}
+
+@media screen and (min-width: 378px) {
+  .container::before {
+    width: 550px;
+    left: -150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container::before {
+    width: 582px;
+    height: 480px;
+
+    top: 90px;
+    left: -262px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container::before {
+    width: 735px;
+    height: 420px;
+
+    top: 100px;
+  }
+}
+
+@media screen and (min-width: 1752px) {
+  .container::before {
+    width: 652px;
+    height: 484px;
+
+    top: 80px;
+    left: -84px;
+
+    border-radius: 0 6px 6px 0;
+  }
+}

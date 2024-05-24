@@ -1,0 +1,21 @@
+{
+  "menuTitle": "Меню",
+  "copyright": "2023 | Odessa Mafia Club |     ",
+  "creator": {
+    "title": " Created by SoftRyzen",
+    "href": "https://softryzen.com/",
+    "internalLink": false
+  },
+  "footerLinks": [
+    {
+      "title": "Політика конфіденційності",
+      "href": "privacy-policy",
+      "internalLink": true
+    },
+    {
+      "title": "Правила Федерації",
+      "href": "https://mafiaworldtour.com/fiim-rules",
+      "internalLink": false
+    }
+  ]
+}

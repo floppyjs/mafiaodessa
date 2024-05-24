@@ -1,0 +1,47 @@
+{
+  "mainPage": {
+    "title": "Hello world",
+    "description": "This is a test page"
+  },
+  "logoAriaLabel": "Посилання із логотипом компанії",
+  "header": {
+    "button": "Зв’язатися"
+  },
+  "navigationRowLinks": [
+    { "title": "Турніри", "href": "/tournaments" },
+    { "title": "Корпоративи", "href": "/corporate-parties" },
+    { "title": "Дитяча мафія", "href": "/mafia-kids" },
+    { "title": "Зал слави", "href": "/hall-fame" }
+  ],
+  "contacts": {
+    "title": "Контакти",
+    "address": {
+      "city": "м. Одеса",
+      "street": "вул. Канатна, 42"
+    },
+    "phone": "+380936150301"
+  },
+  "socials": [
+    {
+      "name": "facebook",
+      "link": "https://www.facebook.com/mafclubod",
+      "icon": "Facebook"
+    },
+    {
+      "name": "instagram",
+      "link": "https://www.instagram.com/mafia_club_odesa/",
+      "icon": "Instagram"
+    },
+    {
+      "name": "telegram",
+      "link": "https://t.me/MafiaclubOdessa_Bot",
+      "icon": "Telegram"
+    }
+  ],
+  "fallbackText": "Упс, щось пішло не так. Спробуйте пізніше!",
+  "onFormSubmitNotify": {
+    "onSuccess": "Заявку успішно надіслано! Наш менеджер звʼяжеться з Вами найближчим часом!",
+    "onError": "Щось пішло не так. Спробуйте пізніше!"
+  },
+  "mobileMenuBtnAriaText": "Зображення кпопки мобільного меню"
+}
