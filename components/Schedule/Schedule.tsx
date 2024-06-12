@@ -1,13 +1,20 @@
 import React, { FC } from 'react';
 
 import { ScheduleItem } from '../ScheduleItem';
-import { getSchedule } from '@/utils/api/getSchedule';
-import { ScheduleProps } from '@/types';
+import { ScheduleProps,ScheduleItemProps } from '@/types';
 import { Fallback } from '../Fallback';
 
-export const Schedule: FC<ScheduleProps> = async ({ className }) => {
-  const schedules = await getSchedule();
 
+
+const schedules:ScheduleItemProps[] = [
+  {id:'0',day:'Понеділок',time_start:'17:00',time_end:'23:00'},
+  {id:'0',day:'Середа',time_start:'17:00',time_end:'23:00'},
+  {id:'0',day:'Четвер',time_start:'17:00',time_end:'23:00'},
+  {id:'0',day:'Субота',time_start:'15:00',time_end:'23:00'},
+]
+
+export const Schedule: FC<ScheduleProps> = async ({ className }) => {
+  
   return (
     <>
       {schedules.length > 0 ? (
