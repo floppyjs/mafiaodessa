@@ -11,7 +11,7 @@ export const ScheduleItem: FC<ScheduleItemProps> = ({
     <>
       <span>{day}</span>
       <span>
-        {time_start.slice(0, 5)} - {time_end.slice(0, 5)}
+        {time_start} - {time_end}
       </span>
     </>
   );
