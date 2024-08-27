@@ -7,12 +7,41 @@ import { LearnListLocation } from "@/views/Location/LearnListLocation"
 
 import css from "./MafiaSchool.module.css"
 import { ButtonPrimary } from "@/components/Buttons"
+import { Slider } from "@/components/Slider"
+import { SliderPresentersElement } from "@/components/SliderPresentersElement"
 
 export const Location: React.FC = () => {
     const { image, imageAlt } = {
         image: "/images/location/background.jpg",
         imageAlt: "Локація",
     }
+
+    const locationData = [
+        {
+            attributes: {
+                name: "",
+                description: "",
+                img: {
+                    data: {
+                        id: "0",
+                        attributes: { url: "/images/location/background.jpg" },
+                    },
+                },
+            },
+        },
+        {
+            attributes: {
+                name: "",
+                description: "",
+                img: {
+                    data: {
+                        id: "1",
+                        attributes: { url: "/images/location/background.jpg" },
+                    },
+                },
+            },
+        },
+    ]
 
     const sectionStyles = classNames(
         css.schoolSection,
@@ -53,7 +82,11 @@ export const Location: React.FC = () => {
                     justifyContent: "space-between",
                 }}
             >
-                <div>
+                <div
+                    style={{
+                        flex: "1 1 0",
+                    }}
+                >
                     <h1
                         className="relative mb-[78px] mt-[18px] px-6 text-[20px] font-semibold leading-[28px] xl:px-8 xl:text-[24px] xl:leading-[32px] xxl:px-11"
                         style={{ color: "#f3f3f3", margin: "0 auto 10px" }}
@@ -74,8 +107,19 @@ export const Location: React.FC = () => {
                         Детальніше
                     </a>
                 </div>
-
-                <MafiaSchoolImage image={image} alt={imageAlt} />
+                <div
+                    style={{
+                        flex: "1 1 0",
+                    }}
+                >
+                    <Slider
+                        pagination
+                        section="location"
+                        element={SliderPresentersElement}
+                        data={locationData}
+                        slideClassName="!h-auto mediaHover:hover:translate transform transition duration-300 ease-out"
+                    />
+                </div>
             </div>
         </Section>
     )

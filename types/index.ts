@@ -318,7 +318,7 @@ export interface FooterLinkItemProps {
 }
 
 export interface SliderProps {
-    section: "school" | "presenters" | "corporate"
+    section: "school" | "presenters" | "corporate" | "location"
     pagination?: boolean
     navigation?: boolean
     autoplay?: boolean

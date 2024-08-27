@@ -9,7 +9,7 @@ import { Fallback } from "@/components/Fallback"
 import data from "@/data/corporateMainPage.json"
 import css from "./CorporatePresenters.module.css"
 
-export const CorporatePresenters = async () => {
+export const CorporatePresenters: React.FC = () => {
     const { secondary_title } = data
     const presentersData = [
         {
