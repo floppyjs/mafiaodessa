@@ -1,6 +1,5 @@
 import { HomeHero } from "@/views/HomeHero"
 import { MafiaSchool } from "@/views/MafiaSchool"
-import { CorporateParties } from "@/views/CorporateParties"
 import { KidsMafia } from "@/views/KidsMafia"
 import { Location } from "@/views/Location"
 import { CorporatePresenters } from "@/views/CorporatePresenters"
