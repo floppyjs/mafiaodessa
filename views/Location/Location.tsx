@@ -24,7 +24,7 @@ export const Location: React.FC = () => {
                 img: {
                     data: {
                         id: "0",
-                        attributes: { url: "/images/location/background.jpg" },
+                        attributes: { url: "/images/location/1.jpg" },
                     },
                 },
             },
@@ -36,7 +36,19 @@ export const Location: React.FC = () => {
                 img: {
                     data: {
                         id: "1",
-                        attributes: { url: "/images/location/background.jpg" },
+                        attributes: { url: "/images/location/2.jpg" },
+                    },
+                },
+            },
+        },
+        {
+            attributes: {
+                name: "",
+                description: "",
+                img: {
+                    data: {
+                        id: "2",
+                        attributes: { url: "/images/location/3.jpg" },
                     },
                 },
             },
@@ -75,18 +87,9 @@ export const Location: React.FC = () => {
                 </p>
             </div>
             <div
-                className={containerStyles}
-                style={{
-                    display: "flex",
-                    margin: "0 auto",
-                    justifyContent: "space-between",
-                }}
+                className={`${containerStyles} sm:flex-col sm:gap-y-[30px] md:flex md:flex-col md:gap-y-[30px] xl:flex-row xl:gap-x-[30px] xxl:justify-between`}
             >
-                <div
-                    style={{
-                        flex: "1 1 0",
-                    }}
-                >
+                <div>
                     <h1
                         className="relative mb-[78px] mt-[18px] px-6 text-[20px] font-semibold leading-[28px] xl:px-8 xl:text-[24px] xl:leading-[32px] xxl:px-11"
                         style={{ color: "#f3f3f3", margin: "0 auto 10px" }}
@@ -107,11 +110,7 @@ export const Location: React.FC = () => {
                         Детальніше
                     </a>
                 </div>
-                <div
-                    style={{
-                        flex: "1 1 0",
-                    }}
-                >
+                <div className="xl:max-w-xl">
                     <Slider
                         pagination
                         section="location"

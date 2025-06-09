@@ -3,6 +3,7 @@ import { MafiaSchool } from "@/views/MafiaSchool"
 import { CorporateParties } from "@/views/CorporateParties"
 import { KidsMafia } from "@/views/KidsMafia"
 import { Location } from "@/views/Location"
+import { CorporatePresenters } from "@/views/CorporatePresenters"
 
 const Home = () => (
     <>
@@ -10,7 +11,7 @@ const Home = () => (
         <div className="common-bg">
             <Location />
             <MafiaSchool />
-            <CorporateParties />
+            <CorporatePresenters />
             <KidsMafia />
         </div>
     </>
