@@ -1,23 +1,9 @@
 import React from "react"
 import { HallFameList } from "@/components/HallFameList"
 import { Heading } from "@/components/Heading/Heading"
-import { Fallback } from "@/components/Fallback"
 import hallFameHeading from "@/data/hallFameHeading.json"
-import customCardData from "@/data/customCardData.json"
-import { getHallFameCards } from "@/utils/getHallFameCards"
-import { HallFameCardProps, HallFameCustomCardProps } from "@/types/index"
 
 import s from "@/views/HallFameSection/HallFameSection.module.css"
-
-const shuffleArray = (
-    array: (HallFameCardProps | HallFameCustomCardProps | undefined)[]
-) => {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1))
-        ;[array[i], array[j]] = [array[j], array[i]]
-    }
-    return array
-}
 
 const shuffledData = [
     {
