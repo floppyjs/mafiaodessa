@@ -1,14 +1,14 @@
 import { HomeHero } from "@/views/HomeHero"
 import { MafiaSchool } from "@/views/MafiaSchool"
 import { KidsMafia } from "@/views/KidsMafia"
-import { Location } from "@/views/Location"
+
 import { CorporatePresenters } from "@/views/CorporatePresenters"
 
 const Home = () => (
     <>
         <HomeHero />
         <div className="common-bg">
-            <Location />
+       
             <MafiaSchool />
             <CorporatePresenters />
             <KidsMafia />
