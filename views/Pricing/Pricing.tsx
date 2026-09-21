@@ -12,7 +12,7 @@ const kidsPrices = [
         minimum: 5000,
         image: "/images/kidsMafia/kids-mafia.webp",
         features: [
-            "Мафія",
+            "Реквізит та атмосфера",
             "Професійний ведучий",
         ],
     },
@@ -24,8 +24,8 @@ const kidsPrices = [
         minimum: 7000,
         image: "/images/kidsMafia/kids-bunker.webp",
         features: [
-            "Мафія",
-            "Бункер",
+            "Реквізит та атмосфера",
+            "Мафія + Бункер",
             "Професійний ведучий",
         ],
         popular: true,
@@ -38,8 +38,8 @@ const kidsPrices = [
         minimum: 9000,
         image: "/images/kidsMafia/kids-max.webp",
         features: [
-            "Мафія",
-            "Бункер",
+            "Реквізит та атмосфера",
+            "Мафія + Бункер",
             "Кубки переможцям",
             "Професійний ведучий",
         ],
@@ -54,7 +54,7 @@ export const Pricing: React.FC = () => {
                 <Heading
                     variant="primary"
                     shadow_prop={data.title}
-                    className="mb-[60px]"
+                    className="mb-[60px] text-center"
                 >
                     {data.title}
                 </Heading>
