@@ -75,11 +75,11 @@ export const KidsPriceCard: React.FC<KidsPriceCardProps> = ({
 
                 <div className="mt-auto rounded-xl bg-black/20 px-5 py-5 text-center">
                     <div>
-                        <span className="text-[42px] font-bold leading-none text-red-500">
+                        <span className="text-[36px] font-bold leading-none text-red-500">
                             {price}
                         </span>
 
-                        <span className="ml-2 text-[18px] text-white">
+                        <span className="ml-2 text-[16px] text-white">
                             грн/учасник
                         </span>
                     </div>
