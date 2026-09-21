@@ -1,39 +1,53 @@
-import { fetchPricing } from "@/utils/api/fetchPricing"
-
 import { Heading } from "@/components/Heading"
-import { PriceCard } from "@/components/PriceCard"
-import { Fallback } from "@/components/Fallback"
+import { KidsPriceCard } from "@/components/KidsPriceCard"
 
 import data from "@/data/pricingSectionData.json"
 
-export const Pricing: React.FC = async () => {
-    const pricesInfo = [
-        {
-            id: "0",
-            attributes: {
-                rateType: "Мінімальний",
-                amount: 5000,
-                presenters: 1,
-                duration: 4,
-                extraPlayerPrice: 500,
-                playersInTeam: 10,
-                maxPlayersInTeam: 15,
-            },
-        },
-        {
-            id: "1",
-            attributes: {
-                rateType: "Максимальний",
-                amount: 10000,
-                presenters: 2,
-                duration: 4,
-                extraPlayerPrice: 500,
-                playersInTeam: 16,
-                maxPlayersInTeam: 26,
-            },
-        },
-    ]
+const kidsPrices = [
+    {
+        id: "mafia",
+        title: "Мафія",
+        duration: "2–2,5 години",
+        price: 500,
+        minimum: 5000,
+        image: "/images/kids-mafia.jpg",
+        features: [
+            "Мафія",
+            "Професійний ведучий",
+        ],
+    },
+    {
+        id: "mafia-bunker",
+        title: "Мафія + Бункер",
+        duration: "3,5–4 години",
+        price: 700,
+        minimum: 7000,
+        image: "/images/kids-bunker.jpg",
+        features: [
+            "Мафія",
+            "Бункер",
+            "Професійний ведучий",
+        ],
+        popular: true,
+    },
+    {
+        id: "mafia-bunker-max",
+        title: "Мафія + Бункер",
+        duration: "4,5–5 годин",
+        price: 900,
+        minimum: 9000,
+        image: "/images/kids-max.jpg",
+        features: [
+            "Мафія",
+            "Бункер",
+            "Кубки переможцям",
+            "Професійний ведучий",
+        ],
+        max: true,
+    },
+]
 
+export const Pricing: React.FC = () => {
     return (
         <section className="mx-auto bg-cover bg-top bg-no-repeat py-[80px]">
             <div className="container">
@@ -45,19 +59,21 @@ export const Pricing: React.FC = async () => {
                     {data.title}
                 </Heading>
 
-                {pricesInfo && pricesInfo?.length > 0 ? (
-                    <ul className="flex flex-wrap justify-center gap-6">
-                        {pricesInfo &&
-                            pricesInfo.map((info) => (
-                                <PriceCard
-                                    key={info.id}
-                                    rate={info.attributes}
-                                />
-                            ))}
-                    </ul>
-                ) : (
-                    <Fallback />
-                )}
+                <ul className="flex flex-wrap justify-center gap-6">
+                    {kidsPrices.map((rate) => (
+                        <KidsPriceCard
+                            key={rate.id}
+                            title={rate.title}
+                            duration={rate.duration}
+                            price={rate.price}
+                            minimum={rate.minimum}
+                            image={rate.image}
+                            features={rate.features}
+                            popular={rate.popular}
+                            max={rate.max}
+                        />
+                    ))}
+                </ul>
             </div>
         </section>
     )
