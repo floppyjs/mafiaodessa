@@ -10,7 +10,7 @@ const kidsPrices = [
         duration: "2–2,5 години",
         price: 500,
         minimum: 5000,
-        image: "/images/kids-mafia.jpg",
+        image: "/images/kidsMafia/kids-mafia.webp",
         features: [
             "Мафія",
             "Професійний ведучий",
@@ -22,7 +22,7 @@ const kidsPrices = [
         duration: "3,5–4 години",
         price: 700,
         minimum: 7000,
-        image: "/images/kids-bunker.jpg",
+        image: "/images/kidsMafia/kids-bunker.webp",
         features: [
             "Мафія",
             "Бункер",
@@ -36,7 +36,7 @@ const kidsPrices = [
         duration: "4,5–5 годин",
         price: 900,
         minimum: 9000,
-        image: "/images/kids-max.jpg",
+        image: "/images/kidsMafia/kids-max.webp",
         features: [
             "Мафія",
             "Бункер",
