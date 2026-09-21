@@ -51,10 +51,7 @@ export const Pricing: React.FC = () => {
     return (
         <section className="mx-auto bg-cover bg-top bg-no-repeat py-[80px]">
             <div className="container">
-                <Heading
-                    variant="primary"
-                    shadow_prop={data.title}
-                    className="mb-[60px]"
+                <className="mb-[60px] text-center"
                 >
                     {data.title}
                 </Heading>
