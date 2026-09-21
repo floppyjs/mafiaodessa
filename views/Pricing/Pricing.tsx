@@ -54,7 +54,7 @@ export const Pricing: React.FC = () => {
                 <Heading
                     variant="primary"
                     shadow_prop={data.title}
-                    className="mb-[60px]"
+                    className="mb-[60px] text-center"
                 >
                     {data.title}
                 </Heading>
